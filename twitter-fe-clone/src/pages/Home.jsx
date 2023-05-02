@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="">
             <Welcomescreen />
-            <div className="p-5 md:p-[110px] bg-[#121212] text-white h-[100vh] flex">
+            <div className="p-5 md:px-[110px] bg-[#121212] text-white h-[100vh] flex">
               <Sidebar />
               <MainContent />
             </div>
