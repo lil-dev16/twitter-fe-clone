@@ -6,3 +6,9 @@
     z-index: 10000;
     top: 0;
 }
+.tweet{
+    z-index: 900000;
+}
+.home{
+    z-index: -999;
+}
