@@ -6,9 +6,24 @@
     z-index: 10000;
     top: 0;
 }
-.tweet{
-    z-index: 900000;
+
+.foryou::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    background-color: blue;
+    height: 5px;
+    bottom: -15px;
+    left: 0;
+    border-radius: 100%;
 }
-.home{
-    z-index: -999;
+.following::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    background-color: blue;
+    height: 5px;
+    bottom: -15px;
+    left: 0;
+    border-radius: 100%;
 }

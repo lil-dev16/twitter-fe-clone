@@ -3,7 +3,7 @@ import { BiHomeCircle } from 'react-icons/bi'
 
 const Sidebar = () => {
     return(
-       <div className="md:h-[100vh] overflow-scroll items-center flex md:flex-col flex-row bg-[red] justify-center md:justify-between bottom-0 fixed left-0 w-full md:w-fit md:relative  px-[1rem]">
+       <div className="md:h-[100vh] overflow-scroll items-center flex md:flex-col flex-row bg-[red] justify-center md:justify-between bottom-0 fixed left-0 w-full md:w-fit md:relative  px-[1rem] md:py-[0] py-[1rem]">
           <div className="md:block hidden w-7 ">
             <svg viewBox="0 0 24 24" aria-hidden="true" class=""><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
           </div>
@@ -31,7 +31,7 @@ const Sidebar = () => {
             <svg viewBox="0 0 24 24" aria-hidden="true" className="w-6 fill-white"><g><path d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z"></path></g></svg>
             <h3 className="text-2xl xl:block hidden ml-5">Messages</h3>
           </div>
-          {/* <div className="md:flex hidden md:mb-[30px]  justify-center md:justify-start">
+          {/* <div className="md:flex hidden md:mb-[30px]  justify-center xl:justify-start">
             <svg viewBox="0 0 24 24" aria-hidden="true" className=" w-7 fill-white"><g><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path></g></svg>
             <h3 className="text-2xl xl:block hidden ml-5">Bookmarks</h3>
           </div> */}
@@ -47,8 +47,8 @@ const Sidebar = () => {
             <svg viewBox="0 0 24 24" aria-hidden="true" className=" w-6 fill-white"><g><path d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"></path></g></svg>
             <h3 className="text-2xl xl:block hidden ml-5">More</h3>
           </div>
-             <div className=" w-10 md:mb-[30px] align-center hidden md:flex justify-end">
-               <svg viewBox="0 0 24 24" aria-hidden="true" className=" w-6 fill-white"><g><path d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"></path></g></svg>
+             <div className=" md:mb-[30px] align-center hidden md:flex justify-end rounded-full p-4 bg-[aqua]">
+               <svg viewBox="0 0 24 24" aria-hidden="true" className=" w-[30px] fill-white"><g><path d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"></path></g></svg>
              </div>
              </div>
          </div>
