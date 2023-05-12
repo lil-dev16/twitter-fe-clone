@@ -1,10 +1,13 @@
 import Home from "./pages/Home"
+import { TwitterProvider } from "./contexts/context"
 
 function App() {
 
   return (
     <div>
-      <Home />
+      <TwitterProvider>
+        <Home />
+      </TwitterProvider>
     </div>
   )
 }
