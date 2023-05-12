@@ -1,7 +1,10 @@
 import React from 'react'
+import { useGlobalContext } from '../contexts/context'
 import Post from './Post'
 
 const MainContent = () => {
+  const {textValue } = useGlobalContext()
+
   return (
     <div className='md:w-[50%] md:ml-[10rem] xl:ml-[15rem]'>
       <h1 className='text-3xl font-bold mt-[1rem]'>Home</h1>
@@ -14,7 +17,7 @@ const MainContent = () => {
         <div className=''>
           <div></div>
           <div className=''>
-            <textarea name="" id="" cols="" rows="5" className='mt-[5px] bg-transparent outline-none text-2xl w-[100%]' placeholder="What's happening?"></textarea>
+            <textarea name="" id="" cols="" rows="5" className='mt-[5px] bg-transparent outline-none text-2xl w-[100%]' placeholder="What's happening?" value={textValue}></textarea>
             <div className='flex justify-between'>
               <div className='flex'>
               <svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 fill-[blue]"><g><path d="M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v9.086l3-3 3 3 5-5 3 3V5.5c0-.276-.224-.5-.5-.5h-13zM19 15.414l-3-3-5 5-3-3-3 3V18.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-3.086zM9.75 7C8.784 7 8 7.784 8 8.75s.784 1.75 1.75 1.75 1.75-.784 1.75-1.75S10.716 7 9.75 7z"></path></g></svg>
@@ -23,7 +26,7 @@ const MainContent = () => {
               <svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 fill-[blue]"><g><path d="M6 3V2h2v1h6V2h2v1h1.5C18.88 3 20 4.119 20 5.5v2h-2v-2c0-.276-.22-.5-.5-.5H16v1h-2V5H8v1H6V5H4.5c-.28 0-.5.224-.5.5v12c0 .276.22.5.5.5h3v2h-3C3.12 20 2 18.881 2 17.5v-12C2 4.119 3.12 3 4.5 3H6zm9.5 8c-2.49 0-4.5 2.015-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.01-4.5-4.5-4.5zM9 15.5C9 11.91 11.91 9 15.5 9s6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5S9 19.09 9 15.5zm5.5-2.5h2v2.086l1.71 1.707-1.42 1.414-2.29-2.293V13z"></path></g></svg>
               </div>
               <div className='bg-[blue] p-2 px-6 rounded-full cursor-pointer'>
-                <p className='font-bold'>Tweet</p>
+                <p className='font-bold' >Tweet</p>
               </div> 
               </div>
               

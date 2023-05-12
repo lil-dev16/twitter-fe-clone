@@ -12,8 +12,9 @@ export const TwitterProvider = ({children}) => {
         date: 'May 12',
         tweet: 'hello world!'    
     }])
+    const [textValue, setTextvalue] = useState('')
     
-    return <TwitterContext.Provider value={{tweets}}>
+    return <TwitterContext.Provider value={{tweets, textValue, setTextvalue}}>
         {children}
     </TwitterContext.Provider>
 }
