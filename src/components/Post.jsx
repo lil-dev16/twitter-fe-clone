@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Post = ({displayName, username, date}) => {
+const Post = ({displayName, username, date, twe}) => {
   return (
     <div className='mb-[15px] mt-[10px]'>
         <div></div>
@@ -12,8 +12,7 @@ const Post = ({displayName, username, date}) => {
             </div>
             <div className='mt-[10px] mb-[15px]'>
                 <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est do
-                lore libero molestias dolorem, earum laudantium vel distinctio ab excepturi quas.
+                {twe}
                 </p>
 
             </div>
